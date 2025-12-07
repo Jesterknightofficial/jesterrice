@@ -25,5 +25,11 @@ vim.o.swapfile = false
 vim.o.writebackup = false
 vim.o.autoread = true
 
-
+-- mappings
+local map = vim.keymap.set
+map({'n', 'v', 'x'}, ';', ':')
+map({'n', 'v', 'x'}, ':', ';')
+-- Scripts and Shourtcuts
+map('n', '<leader>f', ':!alacritty -e sh scripts/filedit/main.sh<CR>')
+map('n', '<leader>t', ':Sex!')
 
