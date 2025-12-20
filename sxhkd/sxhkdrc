@@ -1,0 +1,16 @@
+# XKB Configuration
+# Set the keyboard model, layout, variant, and options
+setxkbmap -model pc105 -layout us -variant dvorak -option ctrl:nocaps &
+
+# Mapping Ctrl + [ to Escape
+ctrl + bracketleft
+    xdotool key Escape
+
+# Key bindings can be added below
+# Example hotkey to open a terminal
+super + Return
+    alacritty
+
+# Example hotkey to close a window
+super + q
+    killall alacritty  # replace with appropriate window manager command
